@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Helvetica,Arial, sans-serif
+}
+/* 1. vị trí
+2.kích thược 
+3.màu sắc
+4.kiểu dáng
+ */
+
+
+ /* 
+ 1.từ ngoài vào trong
+ 2.từ trên xuống dưới
+ 3.tổng quan đến chi tiết
+ */
+
+ /* Common */
+ .clear {
+     clear: both;
+    }
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.btn{
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    } 
+.btn:hover{ 
+    color: #000;
+    background-color: #ccc;
+    }
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.pull-right {
+    float: right !important;
+}
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%
+}
+.text-align {
+    text-align: center;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.mt-32 {
+    margin-top: 32px !important;
+}
+    /* Main */
+#main{
+}
+#nav {
+    display: inline-block;
+}
+#hearder{
+height: 46px;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+/* Bỏ dấu chấm */
+#nav, .subnav {
+  list-style-type: none;  
+}
+/* Chỉ css cho thuộc tính riêng của li */
+#nav > li { 
+display: inline-block;
+}
+/* Thuộc tính position */
+#nav  li {  
+    position: relative;
+}
+/* ẩn thẻ subnav cho thẻ subnav */
+#nav  li:hover .subnav { 
+display: block;
+}
+/* css thẻ subnav */
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    top : 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+}
+/* chỉ css thuộc tính thẻ a cấp độ 1 */
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* css thẻ a */
+#nav  li  a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+/* Css hover cả 2 thẻ */
+#nav > li:hover > a,
+#nav .subnav li:hover a  {
+    background-color: #ccc;
+    color: black;
+}
+/* Css thẻ a của thẻ subnav */
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+/* Size icon */
+#nav .nav-icon {
+    font-size: 12px;
+}
+/* css nút tìm kiếm */
+#hearder .mobile-menu-btn,
+#hearder .search-btn {
+float: right;
+padding: 0 21px;
+}
+
+#hearder .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+/* css nút tìm kiếm */
+#hearder .mobile-menu-btn,
+#hearder .btn-search {
+    color: white;
+    font-size: 14px;
+    line-height: 46px;
+}
+#hearder .mobile-menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+/* hover nút tìm kiếm */
+#hearder .search-btn:hover {
+    cursor: pointer;
+    background-color: red;
+}
+/* css ảnh  */
+#silder{
+position: relative;
+margin-top: 46px;
+padding-top: 50%;
+background: url('/asset/img/anhnen.jpg') top center / cover no-repeat;
+}
+/* css chữ */
+#silder .text-content{
+position: absolute;
+color: white;
+bottom: 46px;
+width: 100%;
+text-align: center;
+}
+/* css chữ tên ảnh */
+#silder .text-heading{
+font-weight: 500px;
+font-size: 24px;
+
+}
+/* css chữ tên ảnh */
+#silder .text-der{
+font-size: 15px;
+margin-top: 25px;
+}
+
+#content{
+
+}
+/* css about section */
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+
+}
+#content .section-sub-heading { 
+text-align: center;
+font-size: 15px;
+margin-top: 25px;
+font-style: italic;
+opacity: 0.6;
+}
+
+#content .about-text { 
+font-size: 15px;
+margin-top: 25px;
+text-align: justify;
+line-height: 1.4;
+}
+
+#content .member-list { 
+margin-top: 32px;
+overflow: hidden;
+
+
+}
+
+#content .member-name { 
+font-size: 15px;
+
+}
+#content .member-img { 
+width: 154px;
+margin-top: 15px;
+border-radius: 5px;
+}
+/* tour section */
+.text-white {
+    color: #fff !important;
+}
+.tour-section {
+    background-color: black;
+}
+.ticker-list {
+    background-color: white;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.ticker-list li { 
+font-size: 15px;
+padding: 11px  16px;
+border: 1px solid #ddd;
+list-style-type: none;
+}
+
+.ticker-list .sold-out{ 
+background-color: red;
+color: white;
+padding: 3px 4px;
+margin-left: 16px;
+}
+
+.ticker-list .quatily{
+float: right;
+background-color: black;
+width: 24px;
+height: 24px;
+border-radius: 50%;
+color: white;
+line-height: 24px;
+text-align: center;
+margin-top: -3px;
+ }
+/* buy ticker */
+.place-list{
+margin-top: 16px;
+}
+
+.place-img{
+width: 100%;
+display: block;
+}
+.place-body{
+   background-color: white;
+   font-size: 15px;
+   padding: 16px;
+    }
+.place-img:hover{
+    opacity: 0.6;
+  }
+.place-heading{
+font-weight: 600;
+font-size: 15px
+}
+
+.place-time{
+margin-top: 15px;
+opacity: 0.6;
+}
+
+.place-derc{
+margin-top: 15px;
+line-height: 1.4;
+}
+
+
+
+/* End buy tiker */
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-info a {
+    color: #4040f2;
+    opacity: 0.8;
+}
+.contact-info a:hover {
+opacity: 1;
+}
+.contact-form {
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* End Contact */
+
+/* Map */
+.map-section img {
+    width: 100%;
+}
+/* End Map */
+
+/* Footer */
+#footer{
+padding: 64px 16px;
+text-align: center;
+}
+.social-list {
+    font-size: 24px;
+}
+.social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.social-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+/* End footer */
+
+.modal.open {
+    display: flex;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    /* tạo animation */
+    animation: modal-ticker ease 0.6s;
+}
+.modal-hearder {
+    background-color: #58bd55;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+.modal-ticker-icon{
+margin-right:16px ;
+}
+.modal-close:hover { 
+opacity: 1;
+background-color: red;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 16px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+}
+.model-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+#modal-buy {
+    background-color: #58bd55;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#modal-buy:hover { 
+    opacity: 0.9;
+}
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: royalblue;
+} 
+/* End Modal */
+/* tạo chuyển động liên tiếp */
+@keyframes modal-ticker {
+    from {
+        transform: translateX(-140px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}

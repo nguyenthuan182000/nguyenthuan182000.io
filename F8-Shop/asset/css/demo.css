@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* common */
+.text-center {
+    text-align: center;
+}
+.text-while {
+    color: #fff;
+}
+#main{
+
+}
+
+#hearder{
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top:0;
+    left: 0 ;
+    right: 0;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+#nav , .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav .subnav li:hover a ,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+#nav li a {
+    line-height: 46px;
+    padding: 0 24px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+}
+
+#nav .subnav a {
+    color: #000;
+    height: 38px;
+    padding: 0 12px;
+    min-width: 160px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .icon-nav {
+    font-size: 12px;
+}
+
+#hearder .search {
+float: right;
+}
+#hearder .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#hearder .icon-search {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 20px;
+}
+#silder{
+background:url(/asset/img/anhnen.jpg) top center / cover no-repeat;
+width: 100%;
+padding-top: 50%;
+margin-top: 46px;
+position: relative;
+}
+#silder .text-content {
+position: absolute;
+width: 100%;
+bottom: 46px;
+}
+
+#silder .content-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#silder .content-der {
+    font-size: 15px;
+    margin-top: 15px;
+}
+#content{
+
+}
+#content .content-section{
+
+}
+
+#content .section-heading{
+
+}
+
+#content .section-sub-heading{
+
+}
+
+#content .about-text{
+
+}
+
+#footer{
+
+}

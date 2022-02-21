@@ -1,0 +1,22 @@
+input{
+    color: aquamarine;
+}
+#tieude{
+    color: blue;
+    font-size: 30px;
+}
+.de{
+    color: blueviolet;
+    font-size: medium;
+}
+.phan1.ten{
+    color: crimson;
+    font-size: 60px;
+}
+.bo.con{
+    color: darkgreen;
+    font-size: medium;
+}
+.bo div div{
+    color: red;
+}
